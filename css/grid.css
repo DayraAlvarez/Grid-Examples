@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0px, auto;
+}
+
+.row:after, .row:before { /* Cuando se floten elementos no se afecte el flujo de los demas elementos "clear"*,
+after y before es para noafectar a los elementos a sus lados*/
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear:both;
+}
+
+[class*="col-"]{
+  min-height: 7px;
+  float: left;
+}
+
+/* Clases para los % de cada columna */
+.col-1 {
+  width: 8.33%;
+  background-color: #FFFF00;
+  margin-bottom: 3px;
+}
+
+.col-2 {
+  width: 16.66%;
+  background-color: #AFFF00;
+}
+
+.col-3 {
+  width: 25%;
+  background-color: #1EE2A6;
+}
+
+.col-4 {
+  width: 33.33%;
+  background-color: #01B6AD;
+}
+
+.col-6 {
+  width: 50%;
+  background-color: #9C42D1;
+}
+
+.col-12 {
+  width: 100%;
+  background-color: #D126A9;
+}
+
+.main {
+  border: 3px solid white;
+  font-weight: bold;
+  height: 50px;
+  margin: 0 0;
+  margin-bottom: 3px;
+  text-align: center;
+  font-family: helvetica;
+  color: white;
+  padding: 1em 0 1em 0; /* Centrar texto a lo alto/*
+  text-align: center;
+}
